@@ -1,0 +1,118 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  background: #f3f6fb;
+  color: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(20, 30, 60, 0.12);
+  padding: 28px;
+}
+.login-container h1 {
+  font-size: 1.25rem;
+  margin-bottom: 18px;
+  color: #0b3b6f;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+.field label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #243b5a;
+}
+.field input[type="email"],
+.field input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d7e1ef;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fbfdff;
+}
+.password-wrap {
+  display: flex;
+  gap: 8px;
+}
+.password-wrap .toggle-password {
+  background: transparent;
+  border: none;
+  color: #0b66d0;
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+}
+.options input[type="checkbox"] {
+  margin-right: 8px;
+}
+.options .forgot {
+  color: #0b66d0;
+  text-decoration: none;
+}
+
+.actions button {
+  width: 100%;
+  padding: 10px 14px;
+  background: #0b66d0;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.actions button:hover {
+  background: #0957b3;
+}
+
+/* Small screens */
+@media (max-width: 420px) {
+  .login-container {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .login-container h1 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Focus styles for accessibility */
+input:focus,
+.toggle-password:focus,
+.actions button:focus {
+  outline: 3px solid rgba(11, 102, 208, 0.18);
+  outline-offset: 2px;
+}
+
+/* Utility */
+.forgot:focus {
+  outline: 2px dashed rgba(11, 102, 208, 0.18);
+}
