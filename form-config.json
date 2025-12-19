@@ -1,0 +1,52 @@
+{
+  "form": {
+    "id": "login-form",
+    "title": "User Login",
+    "fields": [
+      {
+        "id": "email",
+        "name": "email",
+        "type": "email",
+        "label": "Email",
+        "required": true,
+        "placeholder": "you@example.com",
+        "validation": {
+          "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+          "minLength": 5,
+          "errorMessage": "Please enter a valid email address"
+        }
+      },
+      {
+        "id": "password",
+        "name": "password",
+        "type": "password",
+        "label": "Password",
+        "required": true,
+        "placeholder": "Enter your password",
+        "validation": {
+          "minLength": 6,
+          "errorMessage": "Password must be at least 6 characters"
+        }
+      }
+    ],
+    "options": [
+      {
+        "id": "remember",
+        "type": "checkbox",
+        "name": "remember",
+        "label": "Remember me"
+      },
+      {
+        "id": "forgot-password",
+        "type": "link",
+        "text": "Forgot password?",
+        "href": "#"
+      }
+    ],
+    "submit": {
+      "text": "Sign In",
+      "action": "/login",
+      "method": "POST"
+    }
+  }
+}
