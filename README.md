@@ -1,5 +1,5 @@
 # Login-page
 
 
-[login-page-mu-wine.vercel.app]
+[https://vercel.com/manas-ds-projects/login-page]
 
